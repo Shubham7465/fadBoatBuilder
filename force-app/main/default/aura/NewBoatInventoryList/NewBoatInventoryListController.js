@@ -3,12 +3,13 @@
 
         helper.getAllInventories(component, event, helper);
     },
-    resetCount : function(component, event, helper){        
-       // component.set("v.spinner", true); 
+    resetCount : function(component, event, helper){  
+        console.log('local data changed');      
+        component.set("v.spinner", true); 
        var dataSet =  component.get("v.fetchDataLocal");
        var storeLocationMap = new Map();
        var statusMap = new Map();
-       var typeMap = new Map();
+       var typeMap = new Map(); 
        var recordTypeMap = new Map();
        var yearMap = new Map();
        var makeMap = new Map();
@@ -149,12 +150,16 @@
             component.set("v.StoreLocationMap",stMap); 
         }
      
-       // component.set("v.spinner", false);
+       
+       
+        setTimeout(function(){ 
+            component.set("v.spinner", false);
+        }, 2000);
        
     }, 
 
     typeChanged : function(component, event, helper){
-        component.set("v.spinner", true); 
+       
         console.log(true);
         var reserveDataset = component.get("v.fetchData");
         var refinedLocalData = [];
@@ -170,7 +175,7 @@
         }
         component.set("v.filterChangedFieldName", 'Type');
         component.set("v.fetchDataLocal",refinedLocalData);
-        component.set("v.spinner", false);
+        //component.set("v.spinner2", false);
     },
     statusChanged : function(component, event, helper){
         component.set("v.spinner", true);
@@ -178,16 +183,19 @@
         var refinedLocalData = [];
         var type = component.get("v.type");
         var Status = component.get("v.status");
+        console.log('typppppeee',type);
+        console.log(Status);
         for(var i = 0; i < reserveDataset.length; i++){
             if(reserveDataset[i].RecordType.Name == type || type == 'All' ){
-                if(reserveDataset[i].BOATBUILDING__Stage__c == Status || type == 'All' ){
+                if(reserveDataset[i].BOATBUILDING__Stage__c == Status || Status == 'All' ){
                     refinedLocalData.push(reserveDataset[i]);
                 } 
             }
         }
+        console.log('refinedLocalData',refinedLocalData);
         component.set("v.filterChangedFieldName", 'Status');
         component.set("v.fetchDataLocal",refinedLocalData);
-        component.set("v.spinner", false);
+        //component.set("v.spinner", false);
     },
     yearChanged : function(component, event, helper){
         component.set("v.spinner", true);
@@ -207,7 +215,7 @@
         }
         component.set("v.filterChangedFieldName", 'Year');
         component.set("v.fetchDataLocal",refinedLocalData);
-        component.set("v.spinner", false);
+        //component.set("v.spinner", false);
     },
     boatTypeChanged : function(component, event, helper){
         component.set("v.spinner", true);
@@ -231,7 +239,7 @@
         component.set("v.filterChangedFieldName", 'BoatType');
         
         component.set("v.fetchDataLocal",refinedLocalData);
-        component.set("v.spinner", false);
+        //component.set("v.spinner", false);
     },
     makeChanged : function(component, event, helper){
         component.set("v.spinner", true);
@@ -258,7 +266,7 @@
         component.set("v.filterChangedFieldName", 'Make');
         
         component.set("v.fetchDataLocal",refinedLocalData);
-        component.set("v.spinner", false);
+        //component.set("v.spinner", false);
     
     },
     modelChanged : function(component, event, helper){
@@ -277,7 +285,9 @@
                     if(reserveDataset[i].BOATBUILDING__Year__c == year || year == 'All' ){
                         if(reserveDataset[i].BOATBUILDING__Boat_Type__c == btype || btype == 'All' ){
                             if(reserveDataset[i].BOATBUILDING__Manufacturer__c == make || make == 'All' ){
-                                refinedLocalData.push(reserveDataset[i]);
+                                if(reserveDataset[i].BOATBUILDING__Model__c == model || model == 'All' ){
+                                    refinedLocalData.push(reserveDataset[i]);
+                                }
                             }
                         }
                     }
@@ -287,7 +297,7 @@
         component.set("v.filterChangedFieldName", 'Model');
         
         component.set("v.fetchDataLocal",refinedLocalData);
-        component.set("v.spinner", false);
+        //component.set("v.spinner", false);
     },
     storeLocationChanged : function(component, event, helper){
         component.set("v.spinner", true);
@@ -320,7 +330,7 @@
         component.set("v.filterChangedFieldName", 'StoreLocation');
         
         component.set("v.fetchDataLocal",refinedLocalData);
-        component.set("v.spinner", false);
+       // component.set("v.spinner", false);
     },
     handleKeyUp : function(component, event, helper){
         component.set("v.spinner", true);
@@ -348,7 +358,7 @@
             else{
                 component.set("v.filterChangedFieldName", 'load');
                 component.set("v.fetchDataLocal",reserveDataset);
-                component.set("v.spinner", false);
+                //component.set("v.spinner", false);
             }
             
         

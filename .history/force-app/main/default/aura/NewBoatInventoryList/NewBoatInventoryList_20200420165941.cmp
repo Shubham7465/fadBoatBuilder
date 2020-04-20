@@ -180,6 +180,20 @@
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
+                                                        <span class="key-name"><b>Manufacture</b></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-val">{!obj.BOATBUILDING__Manufacturer__c}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
                                                         <span class="key-name"><b> Type</b></span>
                                                     </div>
                                                 </div>
@@ -194,28 +208,56 @@
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Boat Type</b></span>
+                                                        <span class="key-name"><b>Model Variant</b></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-val">{!obj.BOATBUILDING__Boat_Type__c}</span>
+                                                        <span class="key-val">{!obj.BOATBUILDING__Model_Variant__c}</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Manufacture</b></span>
+                                                        <span class="key-name"><b>Stage</b></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-val">{!obj.BOATBUILDING__Manufacturer__c}</span>
+                                                        <span class="key-val">{!obj.BOATBUILDING__Stage__c}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-name"><b>HIN NO.</b></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-val">{!obj.BOATBUILDING__HIN_Number__c}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-name"><b>Store Location</b></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-val">{!obj.BOATBUILDING__Store_Location__c}</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -250,46 +292,33 @@
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Model Variant</b></span>
+                                                        <span class="key-name"><b>Boat Type</b></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-val">{!obj.BOATBUILDING__Model_Variant__c}</span>
+                                                        <span class="key-val">{!obj.BOATBUILDING__Boat_Type__c}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-name"><b>Main color</b></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>HIN NO.</b></span>
+                                                        <span class="key-val">{!obj.BOATBUILDING__Main_color__c}</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-val">{!obj.BOATBUILDING__HIN_Number__c}</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Engine SN</b></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-val">{!obj.BOATBUILDING__Engine_SN__c}</span>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
+                                            
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
@@ -346,6 +375,7 @@
                                                     </div>
                                                 </aura:set>
                                             </aura:if>     
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -356,36 +386,6 @@
                                 <div class="slds-grid slds-wrap" >
                                     <div class="slds-col slds-size--2-of-3">
                                         <div class="slds-grid slds-wrap" >
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Store Location</b></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-val">{!obj.BOATBUILDING__Store_Location__c}</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Stage</b></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-val">{!obj.BOATBUILDING__Stage__c}</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
@@ -403,23 +403,6 @@
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Status for Days on the Lot</b></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-val">
-                                                            <ui:outputRichText value="{!obj.BOATBUILDING__Status_for_Days_on_the_Lot__c}"/>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
                                                         <span class="key-name"><b>Interest Start Date</b></span>
                                                     </div>
                                                 </div>
@@ -431,23 +414,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Status for Interest Date</b></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
-                                                <div class="slds-form-element">
-                                                    <div class="slds-form-element__control">
-                                                        <span class="key-val">
-                                                            <ui:outputRichText value="{!obj.BOATBUILDING__Status_for_Interest_Start_Date__c}"/>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>  
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
@@ -480,20 +446,41 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                              <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-name"><b>Main color</b></span>
+                                                        <span class="key-name"><b>Status for Interest Date</b></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
-                                                        <span class="key-val">{!obj.BOATBUILDING__Main_color__c}</span>
+                                                        <span class="key-val">
+                                                            <ui:outputRichText value="{!obj.BOATBUILDING__Status_for_Interest_Start_Date__c}"/>
+                                                            
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-name"><b>Status for Days on the Lot</b></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-val">
+                                                            <ui:outputRichText value="{!obj.BOATBUILDING__Status_for_Days_on_the_Lot__c}"/>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
                                             <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
@@ -505,6 +492,22 @@
                                                 <div class="slds-form-element">
                                                     <div class="slds-form-element__control">
                                                         <span class="key-val">{!obj.BOATBUILDING__Accent_color__c}</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-name"><b>Engine SN</b></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-col--padded">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <span class="key-val">{!obj.BOATBUILDING__Engine_SN__c}</span>
                                                     </div>
                                                 </div>
                                                 
